@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
+  
+  /* ImploseLabs Brand Colors */
+  --color-purple: #581c87;
+  --color-blue: #3b82f6;
+  --color-slate-dark: #0f172a;
+  --color-silver: #94a3b8;
+  --color-cyan: #06b6d4;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-space-grotesk);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-slate-dark);
+  color: white;
+}
+
+/* Custom utility classes */
+.text-purple { color: var(--color-purple); }
+.text-blue { color: var(--color-blue); }
+.text-cyan { color: var(--color-cyan); }
+.text-silver { color: var(--color-silver); }
+
+.bg-purple { background-color: var(--color-purple); }
+.bg-blue { background-color: var(--color-blue); }
+.bg-slate-dark { background-color: var(--color-slate-dark); }
+.bg-cyan { background-color: var(--color-cyan); }
+
+.border-cyan { border-color: var(--color-cyan); }
+.border-purple { border-color: var(--color-purple); }
+
+/* Typography */
+.font-display {
+  font-family: var(--font-space-grotesk);
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid var(--color-cyan);
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-cyan);
+  color: white;
+}
