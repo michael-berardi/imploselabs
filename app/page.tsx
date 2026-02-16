@@ -68,15 +68,12 @@ export default function HomePage() {
       <main>
         {/* Hero Section */}
         <section className="relative bg-[#0f172a] overflow-hidden">
-          {/* Background gradient */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#581c87]/20 via-[#0f172a] to-[#06b6d4]/10" />
-          
-          {/* Grid pattern */}
-          <div className="absolute inset-0 opacity-5">
-            <div className="absolute inset-0" style={{
-              backgroundImage: `linear-gradient(to right, #06b6d4 1px, transparent 1px), linear-gradient(to bottom, #06b6d4 1px, transparent 1px)`,
-              backgroundSize: '60px 60px',
-            }} />
+          <div className="absolute inset-0">
+            <img 
+              src="/images/hero/hero-pattern.svg" 
+              alt="" 
+              className="w-full h-full object-cover"
+            />
           </div>
           
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
@@ -183,14 +180,12 @@ export default function HomePage() {
               </div>
               
               <div className="relative">
-                <div className="aspect-square bg-gradient-to-br from-[#581c87] to-[#06b6d4] rounded-2xl p-1">
-                  <div className="w-full h-full bg-[#0f172a] rounded-xl flex items-center justify-center">
-                    <div className="text-center p-8">
-                      <Cpu className="h-24 w-24 text-[#06b6d4] mx-auto mb-6" />
-                      <h3 className="font-display text-2xl font-bold text-white mb-2">Overseer</h3>
-                      <p className="text-gray-400">AI-Powered Development Platform</p>
-                    </div>
-                  </div>
+                <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+                  <img 
+                    src="/images/products/overseer-hero.svg" 
+                    alt="Overseer AI Development Platform"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>

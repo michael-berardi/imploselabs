@@ -117,14 +117,12 @@ export default function ProductsPage() {
         <section className="py-16 lg:py-24 bg-gradient-to-b from-[#0f172a] to-[#581c87]/20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative max-w-4xl mx-auto">
-              <div className="aspect-video bg-gradient-to-br from-[#581c87] to-[#06b6d4] rounded-2xl p-1">
-                <div className="w-full h-full bg-[#0f172a] rounded-xl flex items-center justify-center">
-                  <div className="text-center p-12">
-                    <Cpu className="h-32 w-32 text-[#06b6d4] mx-auto mb-6" />
-                    <h2 className="font-display text-3xl font-bold text-white mb-2">Overseer</h2>
-                    <p className="text-gray-400 text-lg">AI-Powered Development Platform</p>
-                  </div>
-                </div>
+              <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src="/images/products/overseer-hero.svg"
+                  alt="Overseer AI Development Platform"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

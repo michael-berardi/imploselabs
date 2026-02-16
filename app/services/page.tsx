@@ -146,32 +146,15 @@ export default function ServicesPage() {
                   </div>
                   
                   <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                    <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
-                      <h3 className="font-semibold text-lg text-white mb-6">
-                        What's Included
-                      </h3>
-                      <ul className="space-y-4 mb-8">
-                        {service.features.map((feature) => (
-                          <li key={feature} className="flex items-start gap-3">
-                            <CheckCircle2 className="h-5 w-5 text-[#06b6d4] flex-shrink-0 mt-0.5" />
-                            <span className="text-gray-300">{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                      
-                      <h3 className="font-semibold text-lg text-white mb-4">
-                        Technologies
-                      </h3>
-                      <div className="flex flex-wrap gap-2">
-                        {service.technologies.map((tech) => (
-                          <span
-                            key={tech}
-                            className="px-3 py-1 bg-[#06b6d4]/20 text-[#06b6d4] rounded-full text-sm"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
+                    <div className="rounded-2xl overflow-hidden shadow-lg">
+                      <img 
+                        src={`/images/services/${
+                          service.title === 'AI Development' ? 'ai-development' : 
+                          service.title === 'Mac App Development' ? 'mac-apps' : 'web-apps'
+                        }.svg`}
+                        alt={service.title}
+                        className="w-full h-auto"
+                      />
                     </div>
                   </div>
                 </div>

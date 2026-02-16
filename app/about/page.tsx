@@ -93,17 +93,12 @@ export default function AboutPage() {
                 </div>
               </div>
               
-              <div className="bg-white/5 rounded-2xl p-8 lg:p-12 border border-white/10">
-                <div className="grid grid-cols-2 gap-8">
-                  {stats.map((stat) => (
-                    <div key={stat.label} className="text-center">
-                      <div className="text-4xl lg:text-5xl font-bold text-[#06b6d4] mb-2">
-                        {stat.number}
-                      </div>
-                      <div className="text-gray-400 font-medium">{stat.label}</div>
-                    </div>
-                  ))}
-                </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img 
+                  src="/images/about/team-workspace.svg"
+                  alt="ImploseLabs workspace"
+                  className="w-full h-auto"
+                />
               </div>
             </div>
           </div>
