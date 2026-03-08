@@ -6,9 +6,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  turbopack: {
-    root: "/Users/libertydesignstudio/dev/overseer/standalone-repos/imploselabs",
-  },
 };
 
 export default nextConfig;
